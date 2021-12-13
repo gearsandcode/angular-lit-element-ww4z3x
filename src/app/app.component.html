@@ -1,0 +1,60 @@
+<div class="App">
+  <eos-alert type="success" scope="global">
+    <slot> Global Success Alert </slot>
+  </eos-alert>
+  <eos-alert type="info" scope="global">
+    <slot> Global Info Alert </slot>
+  </eos-alert>
+  <eos-alert type="warning" scope="global">
+    <slot> Global Warning Alert </slot>
+  </eos-alert>
+  <eos-alert type="danger" scope="global">
+    <slot> Global Error Alert </slot>
+  </eos-alert>
+
+  <h1 class="primary-600-text">Angular APP</h1>
+  <h2 class="secondary-600-text">Testing custom elements</h2>
+
+  <h3>Custom Buttons</h3>
+  <rfln-button type="primary">Primary</rfln-button>
+  <rfln-button type="primary" disabled="true">Primary Disabled</rfln-button>
+  <rfln-button type="secondary">Secondary</rfln-button>
+  <rfln-button type="secondary" disabled="true">Secondary Disabled</rfln-button>
+  <rfln-button type="destructive">Destructive</rfln-button>
+  <rfln-button type="destructive" disabled="true"
+    >Destructive Disabled</rfln-button
+  >
+  <rfln-button type="plain">Plain</rfln-button>
+  <rfln-button type="plain" disabled="true">Plain Disabled</rfln-button>
+
+  <h3>Custom Alerts</h3>
+  <eos-alert type="success" scope="section" title="Success alert!">
+    <slot> Success Section Alert </slot>
+  </eos-alert>
+
+  <eos-alert type="warning" scope="section" title="Warning alert!">
+    <slot> Warning Section Alert </slot>
+  </eos-alert>
+
+  <eos-alert type="info" scope="section" title="Info alert!">
+    <slot>Info Alert Section</slot>
+  </eos-alert>
+
+  <eos-alert type="danger" scope="section" title="ERROR: 404!">
+    <slot> Danger Alert Section </slot>
+  </eos-alert>
+
+  <eos-alert type="info" scope="inline">
+    <slot>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, modi?
+    </slot>
+  </eos-alert>
+
+  <eos-alert type="warning" scope="inline">
+    <slot>Lorem ipsum dolor sit.</slot>
+  </eos-alert>
+
+  <eos-alert type="danger" scope="inline">
+    <slot>Lorem ipsum, dolor sit amet consectetur adipisicing.</slot>
+  </eos-alert>
+</div>
